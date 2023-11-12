@@ -4,7 +4,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
 
-df = pd.read_csv('https://github.com/sebastiantare/streamlitprojects/blob/main/marketing_campaign_dashboard/data_for_dash.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/sebastiantare/streamlitprojects/main/marketing_campaign_dashboard/data_for_dash.csv')
 df['ACTIVITY_DATE'] = pd.to_datetime(df['ACTIVITY_DATE'])
 df['ACTIVITY_DATE'] = df['ACTIVITY_DATE'].dt.date
 
